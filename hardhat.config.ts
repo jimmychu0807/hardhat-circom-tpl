@@ -7,7 +7,9 @@ const config: HardhatUserConfig = {
   circom: {
     inputBasePath: "./circuits",
     outputBasePath: "./circuits/artifacts",
-    ptau: "pot15_final.ptau",
+    // More ptau files at:
+    //   https://github.com/iden3/snarkjs?tab=readme-ov-file#7-prepare-phase-2
+    ptau: "https://storage.googleapis.com/zkevm/ptau/powersOfTau28_hez_final_15.ptau",
     circuits: [{
       name: "lib",
       protocol: "plonk",
